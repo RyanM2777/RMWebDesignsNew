@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import Head from "next/head";
+
 
 const navigation = [
   { name: "Projects", href: "/projects" },
@@ -9,6 +11,12 @@ const navigation = [
 
 export default function Home() {
   return (
+<Head>
+<script
+          src="https://adviocdn.net/cnv/gtm/www.rmwebdesigns.co.uk.js"
+          type="application/javascript"
+        />
+      </Head>
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
